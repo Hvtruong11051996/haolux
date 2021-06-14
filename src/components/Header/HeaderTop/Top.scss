@@ -1,0 +1,124 @@
+.header-top{
+  background-color: #9D9D9D;
+  padding: 1rem 0;
+  .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-left{
+      &__button{
+        font-size: 5.5rem;
+        color: #fff;
+        display: none;
+        &:hover{
+          color: #ffb900;
+        }
+      }
+      &__phone{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        i{
+          font-size: 1.4rem;
+          margin-right: .3rem;
+        }
+        span{
+          font-size: 1.4rem;
+        }
+      }
+    }
+    &-right{
+      display: flex;
+    }
+    &-item{
+      display: flex;
+      align-items: center;
+      margin: 0 1.5rem;
+
+      span ,a , p{
+        font-size: 1.4rem;
+        color: #fff;
+        transition: .2s ease-in;
+        position: relative;
+      }
+
+      a:hover{
+        color: #ffb900;
+      }
+      span{
+        margin: 0 0.2rem;
+      }
+      span:hover{
+        color: #ffb900;
+        cursor: pointer;
+      }
+      i{
+        margin-right: .5rem;
+        font-size: 1.4rem;
+        color: #fff;
+      }
+      &--cart{
+        color: #fff;
+        height: 100%;
+        position: relative;
+        padding: 0 2rem;
+        span , i{
+          z-index: 9999;
+        }
+        p{
+          margin-bottom: 0;
+        }
+        &::before{
+          background: #ffb900;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -10px;
+          bottom: -10px;
+          content: "";
+          border-width: 0 1px 0 1px;
+          border-style: solid;
+          border-color: rgba(153,153,153,0.2);
+          z-index: 0;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  .header-top{
+    .top{
+      &-left{
+        &__button{
+          cursor: pointer;
+          display: flex;
+        }
+        &__phone{
+          display: none;
+        }
+      }
+      &-item{
+        display: none;
+        &--cart{
+          display: flex;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  .header-top{
+    .top{
+      &-item{
+        display: none;
+        &--cart{
+          display: flex;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.product-relate{
+  &__content{
+    position: relative;
+  }
+  &__heading{
+    padding: 1rem ;
+    border: 1px solid #e8e8e8;
+    margin: 6rem 0 2rem 0;
+    h1{
+      position: relative;
+      padding: 1rem 3rem;
+      font-size: 1.4rem;
+      font-weight: 500;
+      background-color: #ffb900;
+      border-color: #ffb900;
+      display: inline-block;
+      letter-spacing: .1rem;
+      color: #fff;
+      border-radius: .3rem;
+      &::after{
+        position: absolute;
+        content: '';
+        border-width:.6rem .6rem;
+        border-color: #ffb900 transparent transparent transparent;
+        border-style: solid;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &__slider{
+    margin: 0 -1rem;
+  }
+  .slick-slide{
+    padding: 0 1rem ;
+  }
+  .slick-slider{
+    position: unset;
+  }
+  .slick-arrow{
+    top: 3rem;
+    outline: none;
+  }
+  .slick-arrow.slick-prev{
+    left: calc(100% - 9.5rem);
+  }
+  .slick-arrow.slick-next{
+    right: 1rem;
+  }
+  .slick-prev, .slick-next {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid  #ebebeb;
+    color: #e8e8e8;
+  }
+
+  .slick-prev:hover,  .slick-next:hover {
+    outline: none;
+    border-color: #000;
+  }
+  .slick-prev::before{
+    font-family: FontAwesome;
+    content: "\f053";
+    font-size: 1.4rem;
+    color: #9b9797;
+  }
+  .slick-next::before{
+    font-family: FontAwesome;
+    content: "\f054";
+    font-size: 1.4rem;
+    color: #9b9797;
+  }
+}
+
+@media (max-width : 414px){
+  .product-relate{
+    &__heading {
+      h1{
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

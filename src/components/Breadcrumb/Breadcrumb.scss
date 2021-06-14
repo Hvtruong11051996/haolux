@@ -1,0 +1,33 @@
+.breadcrumb{
+  margin: 3rem 0;
+  &-list{
+    display: flex;
+  }
+  &-item{
+    margin:  0 1rem;
+    position: relative;
+    &::before{
+      content: '>';
+      position: absolute;
+      top: 50%;
+      right: -1.5rem;
+      transform: translateY(-50%);
+      font-size: 1.4rem;
+    }
+    &:last-child{
+      &::before{
+        display: none;
+      }
+    }
+    &__link{
+      color: #000;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      position: relative;
+      &:hover{
+        color: #ffb900;
+      }
+
+    }
+  }
+}

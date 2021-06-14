@@ -1,0 +1,23 @@
+.scroll{
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #ffb900;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: none;
+  &.active{
+    display: flex;
+  }
+  i{
+    font-size: 2.5rem;
+    color: #fff;
+    transform: rotate(90deg);
+  }
+}

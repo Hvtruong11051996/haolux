@@ -1,0 +1,48 @@
+.not-found{
+  min-height: 90vh;
+  &__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img{
+    img{
+      margin: 50px;
+      width: 200px;
+      opacity: .5;
+      animation: fade-in 2s ease-in-out infinite;
+    }
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      font-size: 1.6rem;
+      a{
+        color: #ffb900;
+        font-size: 1.6rem;
+        text-decoration: underline;
+      }
+    }
+    p.title{
+      font-size: 1.8rem;
+      line-height: 3rem;
+      text-align: center;
+      max-width: 40rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+@keyframes  fade-in {
+  0%{
+    transform: translateY(-1rem);
+  }
+  50%{
+    transform: translateY(1rem);
+  }
+  100%{
+    transform: translateY(-1rem);
+  }
+}

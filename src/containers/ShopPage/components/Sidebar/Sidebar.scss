@@ -1,0 +1,82 @@
+.sidebar{
+  width: 100%;
+  max-height: 0;
+  transition: .5s ease-in;
+  overflow: hidden;
+  border: 1px solid transparent;
+  margin-bottom: 5rem;
+  &-item{
+    padding: 2rem;
+    &__title{
+      font-size: 1.6rem;
+      color: #000;
+      font-weight: 600;
+      letter-spacing: .1rem;
+      text-align: center;
+    }
+  }
+  &-checkbox{
+    &__item{
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+      label{
+        font-size: 1.4rem;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+  &-select{
+    margin-top: 1rem;
+    width: 70%;
+    padding: 1rem 2rem ;
+    border: 1px solid #e8e8e8;
+    outline: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    &__option{
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+  }
+  &.active{
+    max-height: 100vh;
+    border: 1px solid #e8e8e8;
+  }
+  &-price{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    .input-range{
+      height: 2rem;
+    }
+    .input-range__label--min ,
+    .input-range__label--max
+    {
+      font-size: 1.6rem;
+      margin-bottom: -2rem;
+      display: none;
+    }
+    .input-range__label--value .input-range__label-container{
+      top: -2.5rem;
+    }
+    .input-range__label-container{
+      font-size: 1.4rem;
+    }
+    .input-range__track.input-range__track--background{
+      height: 1rem;
+    }
+    .input-range__track.input-range__track--active{
+      height: 100%;
+      background-color: #ffb900;
+    }
+    .input-range__slider{
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-top: -1.35rem;
+      background-color: #ffb900;
+      border: 1px solid #ffb900;
+    }
+  }
+}
+

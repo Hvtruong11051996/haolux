@@ -1,0 +1,92 @@
+.checkout{
+  padding: 10rem 0;
+  &-form{
+    &__title{
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 5rem;
+    }
+    input{
+      outline: none;
+    }
+  }
+  &-order{
+    width: 100%;
+    background-color: #f8f8f8;
+    background-image: url('https://shopgiayreplica.com/wp-content/themes/shopgiayreplica/images/checkout-border.jpg');
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 40px 30px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    &__title{
+      font-size: 2rem;
+      text-align: center;
+    }
+    .order-list{
+      margin-top: 2rem;
+      &__item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0;
+        border-bottom: 1px solid #e8e8e8;
+        span.quantity{
+          font-weight: 600;
+        }
+        span.size{
+          font-weight: 400;
+        }
+        span{
+          font-size: 1.6rem;
+          font-weight: 600;
+          padding: 0 1rem ;
+          text-transform: capitalize;
+        }
+        &--price{
+          span{
+            font-weight: 400;
+            font-size: 1.6rem;
+
+          }
+        }
+      }
+
+    }
+    .checkout-payment{
+      margin-top: 5rem;
+      &__item{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 2rem 0;
+        label{
+          font-size: 1.4rem;
+          margin-left: .5rem;
+        }
+      }
+    }
+    .checkout-button{
+      margin-top: 3rem;
+      max-width: 26.855rem;
+      max-height: 5.6rem;
+      button{
+        padding: 1.6rem 3rem;
+        font-size: 1.6rem;
+        color: #fff;
+        background-color: #ffb900;
+        border: none;
+        outline: none;
+        border-radius: .5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px){
+  .checkout{
+    &-order{
+      padding: 3rem 0;
+    }
+  }
+}

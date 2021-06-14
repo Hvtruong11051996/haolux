@@ -1,0 +1,42 @@
+.history{
+  padding: 10rem 0;
+}
+
+.ant-tabs-tab-btn{
+  font-size: 1.6rem;
+}
+.ant-tabs-tabpane-active{
+  font-size: 2rem;
+}
+.btn-cancel-order-call{
+  margin: 0 1rem;
+  background: #1b1464;
+    border: 1px solid #1b1464;
+    margin-bottom: 1rem;
+}
+.btn-cancel-order-call--delete{
+  background: #1b1464;
+    border: 1px solid #1b1464;
+}
+.btn-cancel-order-call--cc{
+  background: #3c40c6;
+  border: 1px solid #3c40c6;
+}
+.btn-cancel-order-call--edit{
+  background: #636e72;
+  border: 1px solid #636e72;
+}
+.btn-cancel-order-call--status{
+  background: #ff4d4f;
+  border: 1px solid #ff4d4f;
+}
+.btn-cancel-order-call span{
+  font-size: 1.4rem;
+
+}
+span.anticon {
+  font-size: 2rem;
+}
+.order{
+  margin-bottom: 2rem;
+}
